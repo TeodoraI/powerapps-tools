@@ -21,11 +21,3 @@ steps:
 - task: PowerPlatformToolInstaller@0
   inputs:
     DefaultVersion: true
-
-    - task: PowerPlatformExportSolution@0
-      inputs:
-        authenticationType: 'PowerPlatformSPN'
-        PowerPlatformSPN: 'Contoso (default) connection'
-        SolutionName: 'Test'
-        SolutionOutputFile: 'Test_1'
-        Managed: true
